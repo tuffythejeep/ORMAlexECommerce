@@ -1,11 +1,10 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection.js');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection.js");
 
 class Tag extends Model {}
 
 Tag.init(
   {
-    // define columns
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -14,7 +13,6 @@ Tag.init(
     },
     tag_name: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
   },
   {
@@ -25,3 +23,5 @@ Tag.init(
     modelName: "tag",
   }
 );
+
+module.exports = Tag;
