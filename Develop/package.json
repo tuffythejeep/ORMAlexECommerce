@@ -1,19 +1,21 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "ecommerce-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "E-commerce backend using Express and Sequelize",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "db:create": "psql -c 'CREATE DATABASE ecommerce_db;'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
-  },
-  "keywords": [],
+  "keywords": [
+    "ecommerce",
+    "express",
+    "sequelize",
+    "postgres"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -21,8 +23,8 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
+    "ecommerce-backend": "file:",
     "express": "^4.19.2",
-    "module-13-challenge-orm": "file:",
     "pg": "^8.12.0",
     "sequelize": "^5.22.5"
   }
